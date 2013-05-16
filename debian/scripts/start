@@ -8,4 +8,4 @@ if [ ! -x "$NODE_BIN" ]; then
   exit 1
 fi
 
-$NODE_BIN /opt/statsd/stats.js /etc/statsd/adsConfig.js 2>&1 >> /var/log/statsd/statsd.log
+$NODE_BIN /opt/statsd/stats.js /etc/statsd/adsConfig.js
