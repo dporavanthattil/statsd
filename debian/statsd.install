@@ -2,5 +2,5 @@ stats.js	opt/statsd
 lib/*.js	opt/statsd/lib
 backends/*.js	opt/statsd/backends
 debian/localConfig.js	etc/statsd
-debian/scripts/start	statsd/scripts
+debian/scripts/start	opt/statsd/scripts
 debian/statsd.conf	etc/supervisor/conf.d/
