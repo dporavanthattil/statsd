@@ -5,7 +5,7 @@ start on startup
 stop on shutdown
 
 script
-    chdir /usr/share/statsd
+    chdir /opt/statsd
 
-    exec sudo -u _statsd /usr/share/statsd/scripts/start
+    exec sudo -u nobody /opt/statsd/scripts/start
 end script
