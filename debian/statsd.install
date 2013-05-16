@@ -1,6 +1,6 @@
-stats.js	/usr/share/statsd
-lib/*.js /usr/share/statsd/lib
-backends/*.js  /usr/share/statsd/backends
-lib/*.js  /usr/share/statsd/lib
-debian/localConfig.js	/etc/statsd
-debian/scripts/start	/usr/share/statsd/scripts
+stats.js	opt/statsd
+lib/*.js	opt/statsd/lib
+backends/*.js	opt/statsd/backends
+debian/localConfig.js	etc/statsd
+debian/scripts/start	statsd/scripts
+debian/statsd.conf	etc/supervisor/conf.d/

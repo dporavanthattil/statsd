@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PATH=$PATH:/usr/local/bin:/usr/bin:/bin
+PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/a/bin
 NODE_BIN=$(which nodejs||which node)
 
 if [ ! -x "$NODE_BIN" ]; then
@@ -8,4 +8,4 @@ if [ ! -x "$NODE_BIN" ]; then
   exit 1
 fi
 
-$NODE_BIN /usr/share/statsd/stats.js /etc/statsd/localConfig.js 2>&1 >> /var/log/statsd/statsd.log
+$NODE_BIN /opt/statsd/stats.js /etc/statsd/adsConfig.js 2>&1 >> /var/log/statsd/statsd.log
